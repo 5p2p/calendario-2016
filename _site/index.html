@@ -1,29 +1,13 @@
----
-title: Calendario 2016 - 5pani2pesci
-logo: /images/logo-5p2p-128.png
-
-header-message:
-  - Volevamo stare con voi per tutto il 2016
-  - Ogni mese un articolo ed una frase per vivere un anno da Dio
-  - Ordina il Calendario
-
-menu: 
-      - Come si usa?
-
-menu-mobile: 
-      - Come si usa in mobile?
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 
-  <title>{{page.title}}</title>
+  <title>Calendario 2016 - 5pani2pesci</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="{{page.logo}}">
+  <link rel="shortcut icon" href="/images/logo-5p2p-128.png">
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -37,17 +21,17 @@ menu-mobile:
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><span class="img-helper"></span><img src="{{page.logo}}"</a>
+      <a id="logo-container" href="#" class="brand-logo"><span class="img-helper"></span><img src="/images/logo-5p2p-128.png"</a>
       <ul class="right hide-on-med-and-down">
-        {% for item in page.menu %}
-        <li><a href="#">{{ item }}</a></li>
-        {% endfor %}
+        
+        <li><a href="#">Come si usa?</a></li>
+        
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        {% for item in page.menu-mobile %}
-        <li><a href="#">{{ item }}</a></li>
-        {% endfor %}
+        
+        <li><a href="#">Come si usa in mobile?</a></li>
+        
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -57,13 +41,13 @@ menu-mobile:
     <div class="section no-pad-bot mychild">
       <div class="container">
         <div class='extra-space'></div>
-        <!-- <h1 class="header center teal-text text-lighten-2">{{page.header-message[0]}}</h1> -->
-        <h1 class="header center light">{{page.header-message[0]}}</h1>
+        <!-- <h1 class="header center teal-text text-lighten-2">Volevamo stare con voi per tutto il 2016</h1> -->
+        <h1 class="header center light">Volevamo stare con voi per tutto il 2016</h1>
         <div class="row center">
-          <h5 class="header col s12 light">{{page.header-message[1]}}</h5>
+          <h5 class="header col s12 light">Ogni mese un articolo ed una frase per vivere un anno da Dio</h5>
         </div>
         <div class="row center">
-          <a href="" id="download-button" class="btn-large waves-effect waves-yellow btn-bright">{{page.header-message[2]}} <i class="material-icons right">today</i></a>
+          <a href="" id="download-button" class="btn-large waves-effect waves-yellow btn-bright">Ordina il Calendario <i class="material-icons right">today</i></a>
         </div>
         <br><br>
 

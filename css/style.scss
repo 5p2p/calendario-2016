@@ -1,0 +1,140 @@
+---
+# Materialize overwrites
+---
+
+/* Coolors Exported Palette - coolors.co/ffbf00-ebebeb-c0c0c0-0d83af-161819 */
+
+$Text_color:    #161819;
+$Key_color:     #0D83AF !important; // 5p2p logo color
+$Bright_color:  #ffbf00;
+$Bright_color_hover:  #FFD863;
+$Gray:          #c0c0c0;
+$Light_gray:    #ebebeb;
+
+// -----------------------------
+
+
+html {
+  // font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: $Text_color;
+}
+
+
+.color-5p2p{
+  background-color: $Key_color;
+}
+
+.text-5p2p{
+  color: $Key_color;
+}
+
+.text-bright{
+  color: $Bright_color;
+}
+
+.text-dark{
+  color: $Text_color;
+}
+
+.color-bright{
+  background-color: $Bright_color;
+}
+
+.btn-bright{
+  color: $Text_color;
+  background-color: $Bright_color;
+}
+
+.btn-bright:hover {
+  background-color: $Bright_color_hover;
+}
+
+
+.img-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.parallax {
+  background-color: black;
+  img {
+    opacity: 0.5;
+  }
+}
+
+h1 {
+  font-weight: 900 !important ;
+  opacity: 0.9;
+}
+
+h5 {
+  // font-family: "Roboto Condensed", sans-serif;
+  // font-weight: 900 !important ;
+  // opacity: 0.9;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: $Text_color;
+  img {
+    max-height: 6rem;
+    vertical-align: middle;
+  }
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: $Text_color;
+}
+
+.parallax-container {
+  min-height: 30rem; //380px;
+  line-height: 0;
+  height: auto;
+  color: $Light_gray; // rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (min-width : 992px) {
+
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+  .extra-space{
+    height: 2.5rem !important;
+  }
+
+}
+
+@media only screen and (min-width : 600px) {
+
+  .extra-space{
+    height: 1.5rem;
+  }
+
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
