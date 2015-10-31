@@ -1,6 +1,6 @@
 ---
 title: Calendario 2016 - 5pani2pesci
-logo: /images/logo-5p2p-128.png
+logo: images/logo-5p2p-128.png
 
 header-message:
   - Volevamo stare con voi per tutto il 2016
@@ -23,7 +23,7 @@ menu-mobile:
   <title>{{page.title}}</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="{{page.logo}}">
+  <link rel="shortcut icon" href="{{site.baseurl}}/{{page.logo}}">
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -37,7 +37,7 @@ menu-mobile:
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><span class="img-helper"></span><img src="{{page.logo}}"</a>
+      <a id="logo-container" href="#" class="brand-logo"><span class="img-helper"></span><img src="{{site.baseurl}}/{{page.logo}}"</a>
       <ul class="right hide-on-med-and-down">
         {% for item in page.menu %}
         <li><a href="#">{{ item }}</a></li>
@@ -69,7 +69,7 @@ menu-mobile:
 
       </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Il calendario 2016 di 5pani2pesci"></div>
+    <div class="parallax"><img src="{{site.baseurl}}/background1.jpg" alt="Il calendario 2016 di 5pani2pesci"></div>
   </div>
 
 
@@ -118,7 +118,7 @@ menu-mobile:
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="{{site.baseurl}}/background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -144,7 +144,7 @@ menu-mobile:
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="{{site.baseurl}}/background3.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
   <footer class="page-footer color-5p2p">
