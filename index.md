@@ -17,12 +17,12 @@ message:
 # 0
   - icon: 1 #ion-ios-circle-filled
     title: È bello annunciare il Signore! #La bellezza
-    text: Una volta fatta esperienza di Dio, nasce il desiderio di comunicarlo in tutti i modi possibili. Anche attraverso un calendario si può entrare nel cuore delle persone per annunciare che *l'amore chiama &mdash; l'amore è urgente.*
+    text: Una volta fatta esperienza di Dio, nasce il desiderio di annunciarlo in tutti i modi possibili. Anche attraverso un calendario si può entrare nel cuore delle persone per annunciare che *l’amore chiama &mdash; l’amore è urgente*.
 
 # 1
   - icon: 2 #ion-paper-airplane
     title: Ad ogni creatura #Per tutti
-    text: Da regalare a chi ti sta vicino, ad un amico, ai tuoi, alla tua compagna di università, al tuo collega. A tutte quelle persone che vorresti avvicinare ma con cui, forse, ti senti goffo nel parlargli di Dio. Ti diamo una mano noi!
+    text: Da regalare a chi ti sta vicino, ad un amico, ai tuoi, alla tua compagna di università, al tuo collega. A tutte quelle persone che vorresti avvicinare ma con cui, forse, proprio ti senti goffo a parlare di Dio. Ti diamo una mano noi!
     
     vale: Perchè l'idea del calendario? Perché tu possa regalarlo a chi ti sta vicino, ad un amico, a tua madre, alla tua compagno di università, al tuo collega. A tutte quelle persone che vorresti avvicinare ma con cui, forse, ti senti goffo nel parlargli di Dio. Ti diamo una mano noi!
 
@@ -34,7 +34,7 @@ message:
 # 3
   - icon: #
     title: Perchè l'idea del calendario?
-    text: Ci piaceva poter entrare nelle vostre case in maniera semplice. Ci piaceva l'idea che tu potessi regalare qualcosa di concreto alle persone a cui desideri parlare di Dio, con cui desideri **condividere l'esperienza che hai fatto** nell'incontrare il Signore. <br><br> Il nostro calendario ce lo immaginiamo appeso in qualche angolo della tua casa, magari in cucina o nella tua camera. Ce lo immaginiamo come **il pretesto per iniziare una condivisione** con qualche amico mentre prepari la cena ... oppure una timida luce di speranza in quei giorni neri in cui tutto sembra essere senza senso. Il Signore c'è e non si è sbagliato, magari potrà bastare un'immagine od una frase a ricordatelo.
+    text: Ci piaceva poter entrare nelle vostre case in maniera semplice. Ci piaceva l’idea che tu potessi regalare qualcosa di concreto alle persone a cui desideri parlare di Dio, con cui desideri **condividere l’esperienza che hai fatto** nell'incontrare il Signore.  <br><br> Il nostro calendario ce lo immaginiamo appeso in qualche angolo della tua casa, magari in cucina o nella tua camera. Ce lo immaginiamo come **il pretesto per iniziare una condivisione** con qualche amico mentre prepari la cena … oppure una timida luce di speranza in quei giorni neri in cui tutto sembra essere senza senso. Il Signore c’è e non si è sbagliato &mdash; magari potrà bastare un’immagine od una frase a ricordatelo.
 
 # 4
   - icon: #
