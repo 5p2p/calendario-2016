@@ -4,26 +4,41 @@ logo: images/logo-5p2p-128.png
 
 header:
 
-  - Volevamo stare con voi per tutto il 2016
+  - Vogliamo stare con voi per tutto il 2016 #Volevamo
   - Ogni mese un articolo ed una frase per vivere un anno da Dio
   - Ordina il Calendario
   - images/gallery/calendario-2016-5.jpg
 
 message:
 
+# 0
   - icon: 1 #ion-ios-circle-filled
     title: È bello annunciare il Signore! #La bellezza
     text: Una volta fatta esperienza di Dio, nasce il desiderio di comunicarlo in tutti i modi possibili. Anche attraverso un calendario si può entrare nel cuore delle persone per annunciare che <i>l'amore chiama &mdash; l'amore è urgente.</i>
 
+# 1
   - icon: 2 #ion-paper-airplane
     title: Ad ogni creatura #Per tutti
-    text: Perchè l'idea del calendario? Perché tu possa regalarlo a chi ti sta vicino, ad un amico, a tua madre, alla tua compagno di università, al tuo collega. A tutte quelle persone che vorresti avvicinare ma con cui, forse, ti senti goffo nel parlargli di Dio. Ti diamo una mano noi!
+    text: Da regalare a chi ti sta vicino, ad un amico, a tua madre, alla tua compagno di università, al tuo collega. A tutte quelle persone che vorresti avvicinare ma con cui, forse, ti senti goffo nel parlargli di Dio. Ti diamo una mano noi!
+    
+    vale: Perchè l'idea del calendario? Perché tu possa regalarlo a chi ti sta vicino, ad un amico, a tua madre, alla tua compagno di università, al tuo collega. A tutte quelle persone che vorresti avvicinare ma con cui, forse, ti senti goffo nel parlargli di Dio. Ti diamo una mano noi!
 
+# 2
   - icon: 3 #ion-ios-barcode
     title: E con ogni mezzo :)
     text: Ogni mese un messaggio del <i>Suo amore</i> attraverso i disegni e le grafiche di 5pani2pesci con il collegamento ad un articolo per dare materiale per riflettere a chi ci passerà davanti.
 
-finalmessage:
+# 3
+  - icon: #
+    title: Perchè l'idea del calendario?
+    text: Ci piaceva poter entrare nelle vostre case in maniera semplice. Ci piaceva l'idea che tu potessi regalare qualcosa di nuovo alle persone che vorresti avvicinare ...
+
+# 4
+  - icon: #
+    title: Ordina il calendario
+    text: Ci piaceva poter entrare nelle vostre case in maniera semplice. Ci piaceva l'idea che tu potessi regalare qualcosa di nuovo alle persone che vorresti avvicinare ...
+
+footer:
 
   5pani2pesci è un progetto per conoscere l'Amore vero, quello che ti cambia la vita. Il nostro augurio e la nostra missione è accompagnarti in questo cammino per aiutarti ad approfondire un incontro autentico col Signore e portare pienamente frutto nella tua vita.
 
@@ -125,7 +140,7 @@ menu-mobile:
       <!--   Icon Section   -->
       <div class="row">
 
-      {% for message in page.message %}
+      {% for message in page.message limit:3 %}
         <div class="col s12 m4">
           <div class="icon-block">
             <!-- <h2 class="center text-bright"><i class="material-icons">{{message.icon}}</i></h2> -->
@@ -174,8 +189,8 @@ menu-mobile:
       <div class="row">
         <div class="col s12 center">
           <!-- <h3><i class="mdi-content-send text-bright"></i></h3> -->
-          <h4>Come funziona?</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h4>{{page.message[3].title}}</h4>
+          <p class="left-align light">{{page.message[3].text}}</p>
         </div>
       </div>
 
@@ -198,8 +213,8 @@ menu-mobile:
       <div class="row">
         <div class="col s12 center">
           <!-- <h3><i class="mdi-content-send text-bright"></i></h3> -->
-          <h4>Ordina il calendario</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h4>{{page.message[4].title}}</h4>
+          <p class="left-align light">{{page.message[4].text}}</p>
         </div>
       </div>
 
@@ -226,7 +241,7 @@ menu-mobile:
       <div class="row">
         <div class="col l8 s12">
           <h5 class="white-text">Chi siamo</h5>
-          <p class="grey-text text-lighten-4">{{ page.finalmessage}}</p>
+          <p class="grey-text text-lighten-4">{{ page.footer}}</p>
 
         </div>
         <div class="col l3 offset-l1 s12">
