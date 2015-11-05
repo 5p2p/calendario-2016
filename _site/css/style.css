@@ -1,7 +1,26 @@
 /* Coolors Exported Palette - coolors.co/ffbf00-ebebeb-c0c0c0-0d83af-161819 */
+.bold-text {
+  font-weight: bold !important; }
+
+.no-bold-text {
+  font-weight: normal !important; }
+
 html {
   font-family: "Roboto", sans-serif;
   color: #161819; }
+
+.footer-copyright {
+  text-align: center; }
+  .footer-copyright a {
+    font-weight: bold; }
+  .footer-copyright a:hover {
+    color: #bbdefb; }
+
+.row, .col {
+  padding: 0.1rem 0.2rem !important; }
+
+.section .nomargin {
+  margin: 0 !important; }
 
 .color-5p2p {
   background-color: #0D83AF !important; }
@@ -33,11 +52,16 @@ html {
 .parallax {
   background-color: black; }
   .parallax img {
-    opacity: 0.5; }
+    opacity: 0.7; }
+  .parallax .noopacity {
+    opacity: 1.0 !important; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 900 !important; }
 
 h1 {
-  font-weight: 900 !important;
-  opacity: 0.9; }
+  opacity: 0.9;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); }
 
 nav ul a,
 nav .brand-logo {

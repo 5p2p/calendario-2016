@@ -13,13 +13,37 @@ $Light_gray:    #ebebeb;
 
 // -----------------------------
 
+.bold-text {
+  font-weight: bold !important;
+}
+
+.no-bold-text {
+  font-weight: normal !important;
+}
 
 html {
   // font-family: GillSans, Calibri, Trebuchet, sans-serif;
   font-family: "Roboto", sans-serif;
   color: $Text_color;
 }
+.footer-copyright {
+  text-align: center;
+  a {
+    font-weight: bold;
+  }
+  a:hover {
+    color: #bbdefb;
+  }
+}
 
+.row, .col {
+  padding: 0.1rem 0.2rem !important;
+  // margin: 0.2rem !important;
+}
+
+.section .nomargin{
+  margin:0 !important;
+}
 
 .color-5p2p{
   background-color: $Key_color;
@@ -60,13 +84,21 @@ html {
 .parallax {
   background-color: black;
   img {
-    opacity: 0.5;
+    opacity: 0.7;
+    // max-height: 100%;
+  }
+  .noopacity {
+    opacity: 1.0 !important;
+    // width: 50%;
   }
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
   font-weight: 900 !important ;
+}
+h1 {
   opacity: 0.9;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4); 
 }
 
 h5 {

@@ -2,10 +2,51 @@
 title: Calendario 2016 - 5pani2pesci
 logo: images/logo-5p2p-128.png
 
-header-message:
+header:
+
   - Volevamo stare con voi per tutto il 2016
   - Ogni mese un articolo ed una frase per vivere un anno da Dio
   - Ordina il Calendario
+  - images/gallery/calendario-2016-5.jpg
+
+message:
+
+  - icon: 1 #ion-ios-circle-filled
+    title: È bello annunciare il Signore! #La bellezza
+    text: Una volta fatta esperienza di Dio nasce il desiderio di esprimerlo in tutti i modi possibili. Anche attraverso un calendario si può entrare nel cuore delle persone per annunciare che <i>l'amore chiama &mdash; l'amore è urgente.</i>
+
+  - icon: 2 #ion-paper-airplane
+    title: Ad ogni creatura #Per tutti
+    text: bla bla bla
+
+  - icon: 3 #ion-ios-barcode
+    title: E con ogni mezzo :)
+    text: du du du
+
+finalmessage:
+
+  5pani2pesci è un progetto per conoscere l'Amore vero, quello che ti cambia la vita. Il nostro augurio e la nostra missione è accompagnarti in questo cammino per aiutarti ad approfondire un incontro autentico col Signore e portare pienamente frutto nella tua vita.
+
+parallax:
+
+  - text:
+    image: images/gallery/calendario-2016-8.jpg
+
+  - text:
+    image: images/gallery/calendario-2016-13.jpg
+
+lightbox:
+
+  - images/gallery/calendario-2016-7.jpg
+  - images/gallery/calendario-2016-2.jpg
+
+  - images/gallery/calendario-2016-10.jpg
+  - images/gallery/calendario-2016-11.jpg
+  - images/gallery/calendario-2016-12.jpg
+
+  - images/gallery/calendario-2016-8.jpg
+  - images/gallery/calendario-2016-9.jpg
+  
 
 menu: 
       - Come si usa?
@@ -32,6 +73,8 @@ menu-mobile:
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,400italic,700|Roboto+Condensed:300' rel='stylesheet' type='text/css'>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- ionicons icons -->
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
 </head>
 
 
@@ -61,18 +104,18 @@ menu-mobile:
       <div class="container">
         <div class='extra-space'></div>
         <!-- <h1 class="header center teal-text text-lighten-2">{{page.header-message[0]}}</h1> -->
-        <h1 class="header center light">{{page.header-message[0]}}</h1>
+        <h1 class="header center light">{{page.header[0]}}</h1>
         <div class="row center">
-          <h5 class="header col s12 light">{{page.header-message[1]}}</h5>
+          <h5 class="header col s12 light no-bold-text">{{page.header[1]}}</h5>
         </div>
         <div class="row center">
-          <a href="" id="download-button" class="btn-large waves-effect waves-yellow btn-bright">{{page.header-message[2]}} <i class="material-icons right">today</i></a>
+          <a href="" id="download-button" class="btn-large waves-effect waves-yellow btn-bright">{{page.header[2]}} <i class="material-icons right">today</i></a>
         </div>
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="{{site.baseurl}}/background1.jpg" alt="Il calendario 2016 di 5pani2pesci"></div>
+    <div class="parallax"><img src="{{site.baseurl}}/{{page.header[3]}}" alt="{{page.title}}"></div>
   </div>
 
 
@@ -81,56 +124,81 @@ menu-mobile:
 
       <!--   Icon Section   -->
       <div class="row">
+
+      {% for message in page.message %}
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center text-bright"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+            <!-- <h2 class="center text-bright"><i class="material-icons">{{message.icon}}</i></h2> -->
+            <!-- <h2 class="center text-bright"><i class="icon {{message.icon}}"></i></h2> -->
+            <h2 class="center text-bright">{{message.icon}}</h2>
+            <h5 class="center bold-text" style="height:3rem;">{{message.title}}</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <p class="light">{{message.text}}</p>
           </div>
         </div>
+        {% endfor %}
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center text-bright"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center text-bright"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
       </div>
 
     </div>
   </div>
 
+  <div class="container">
+    <div class="section">
+      <div class="row nomargin">
+          <div class="col s12 m6"><img class="materialboxed" width="100%" src="{{page.lightbox[0]}}"></div>
+          <div class="col s12 m6"><img class="materialboxed" width="100%" src="{{page.lightbox[1]}}"></div>
+      </div>
+      <div class="row nomargin">
+          <div class="col s12 m4"><img class="materialboxed" width="100%" src="{{page.lightbox[2]}}"></div>
+          <div class="col s12 m4"><img class="materialboxed" width="100%" src="{{page.lightbox[3]}}"></div>
+          <div class="col s12 m4"><img class="materialboxed" width="100%" src="{{page.lightbox[4]}}"></div>
+      </div>
+    </div>
+  </div>
 
-  <div class="parallax-container valign-wrapper">
+ <!--  <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">{{page.parallax[0].text}}</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="{{site.baseurl}}/background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
+    <div class="parallax"><img class="noopacity" src="{{site.baseurl}}/{{page.parallax[0].image}}" alt=""></div>
+  </div> -->
 
   <div class="container">
     <div class="section">
 
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send text-bright"></i></h3>
-          <h4>Contact Us</h4>
+          <!-- <h3><i class="mdi-content-send text-bright"></i></h3> -->
+          <h4>Come funziona?</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>  
+
+    <div class="container">
+    <div class="section">
+      <div class="row nomargin">
+          <div class="col s12 m6"><img class="materialboxed" width="100%" src="{{page.lightbox[5]}}"></div>
+          <div class="col s12 m6"><img class="materialboxed" width="100%" src="{{page.lightbox[6]}}"></div>
+      </div>
+      </div>  
+    </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <!-- <h3><i class="mdi-content-send text-bright"></i></h3> -->
+          <h4>Ordina il calendario</h4>
           <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
         </div>
       </div>
@@ -143,45 +211,37 @@ menu-mobile:
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">{{page.parallax[1].text}}</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="{{site.baseurl}}/background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img class="noopacity" src="{{site.baseurl}}/{{page.parallax[1].image}}" alt="{{page.title}}"></div>
   </div>
 
-  <footer class="page-footer color-5p2p">
+  <!-- <footer class="page-footer color-5p2p"> -->
+  <footer class="page-footer yellow">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
+        <div class="col l8 s12">
+          <h5 class="white-text">Chi siamo</h5>
+          <p class="grey-text text-lighten-4">{{ page.finalmessage}}</p>
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+        <div class="col l3 offset-l1 s12">
+          <h5 class="white-text">Seguici su:</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="{{site.blog}}">Blog</a></li>
+            <li><a class="white-text" href="{{site.social.facebook}}">Facebook</a></li>
+            <li><a class="white-text" href="{{site.social.twitter}}">Twitter</a></li>
+            <li><a class="white-text" href="{{site.social.youtube}}">Youtube</a></li>
           </ul>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
+
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Crafted with <i class="icon red-text text-lighten-2 ion-heart"></i> by <a class="" href="http://5p2p.it">5pani2pesci</a>
       </div>
     </div>
   </footer>
