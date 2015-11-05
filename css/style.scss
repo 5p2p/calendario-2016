@@ -13,6 +13,15 @@ $Light_gray:    #ebebeb;
 
 // -----------------------------
 
+p{
+  strong{
+    font-weight: bold;
+  }
+}
+.empty-line{
+  height: 1rem;
+}
+
 .bold-text {
   font-weight: bold !important;
 }
