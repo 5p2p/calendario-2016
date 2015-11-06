@@ -15,8 +15,10 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,400italic,700|Roboto+Condensed:300' rel='stylesheet' type='text/css'>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- awesome icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- ionicons icons -->
-  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <!-- <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -34,7 +36,7 @@
         <li><a href="{{item.url}}">{{ item.title }}</a></li>
         {% endfor %}
       </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="fa fa-bars"></i></a>
     </div>
   </nav>
 
@@ -48,7 +50,7 @@
           <h5 class="header col s12 light no-bold-text">{{page.header[1]}}</h5>
         </div>
         <div class="row center">
-          <a href="{{site.baseurl}}{{page.order-button-url}}" id="download-button" class="btn-large waves-effect waves-yellow btn-bright">{{page.order-button-text}} <i class="material-icons right">today</i></a>
+          <a href="#{{page.order-button-url}}" id="download-button" class="btn-large waves-effect waves-yellow btn-bright">{{page.order-button-text}} <i class="fa fa-calendar-o right"></i></a>
         </div>
         <br><br>
       </div>
@@ -86,11 +88,11 @@
   <div class="container">
     <div class="section">
       <div class="row nomargin">
-          <div class="col s6 m6"><img class="materialboxed" width="100%" src="{{page.lightbox[0]}}"></div>
+          <div class="col s12 m6"><img class="materialboxed" width="100%" src="{{page.lightbox[0]}}"></div>
           <div class="col s6 m6"><img class="materialboxed" width="100%" src="{{page.lightbox[1]}}"></div>
-      </div>
-      <div class="row nomargin">
-          <div class="col s12 m4"><img class="materialboxed" width="100%" src="{{page.lightbox[2]}}"></div>
+      <!-- </div> -->
+      <!-- <div class="row nomargin"> -->
+          <div class="col s6 m4"><img class="materialboxed" width="100%" src="{{page.lightbox[2]}}"></div>
           <div class="col s12 m4"><img class="materialboxed" width="100%" src="{{page.lightbox[3]}}"></div>
           <div class="col s12 m4"><img class="materialboxed" width="100%" src="{{page.lightbox[4]}}"></div>
       </div>
@@ -112,7 +114,7 @@
   </div>  
 
   <div class="row center">
-    <a href="{{site.baseurl}}{{page.order-button-url}}" id="download-button" class="btn-large waves-effect waves-yellow btn-bright">{{page.order-button-text}} <i class="material-icons right">today</i></a>
+    <a href="#{{page.order-button-url}}" id="download-button" class="btn-large waves-effect waves-yellow btn-bright">{{page.order-button-text}} <i class="fa fa-calendar-o right"></i></a>
   </div>
 
 
@@ -137,7 +139,7 @@
   </div>
 
   <div class="row center">
-    <a href="{{site.baseurl}}{{page.order-button-url}}" id="download-button" class="btn-large waves-effect waves-yellow btn-bright">{{page.order-button-text}} <i class="material-icons right">today</i></a>
+    <a href="#{{page.order-button-url}}" id="download-button" class="btn-large waves-effect waves-yellow btn-bright">{{page.order-button-text}} <i class="fa fa-calendar-o right"></i></a>
   </div>
 
 
@@ -153,7 +155,36 @@
     <div class="parallax"><img class="noopacity" src="{{site.baseurl}}/{{page.parallax[1].image}}" alt="{{page.title}}"></div>
   </div>
 
-  <div class="section"></div>
+  <!-- <div class="section"></div> -->
+
+   <div class="container">
+    <div class="section">
+
+    <a name="{{page.order-button-url}}"></a>
+      <div class="row">
+        <div class="col s12 center">
+          <!-- <h3><i class="mdi-content-send text-bright"></i></h3> -->
+          <h4>{{page.message[5].title}}</h4>
+          <div class="left-align light">{{page.message[5].text | markdownify }}</div>
+        </div>
+      </div>
+
+      <!-- <div class="divider"></div> -->
+          
+      <div class="row" style="border-top: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb;">
+        <div class="col left-align s9">
+          <p>Calendario 2016 <span class="small-text">(20x20cm, da parete)</span></p>
+        </div>
+          
+        <div class="col left-align s3"><p>15 euro</p></div>
+      </div>
+      
+      <div class="row">
+        <div class="col left-align s12"><p >Pagamenti accettati:</p></div>
+      </div>
+
+    </div>
+  </div>
 
   <!-- <footer class="page-footer color-5p2p"> -->
   <footer class="page-footer amber">
@@ -178,7 +209,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Crafted with <i class="icon red-text text-lighten-2 ion-heart"></i> by <a class="" href="http://5p2p.it">5pani2pesci</a>
+      Crafted with <i class="fa red-text text-lighten-2 fa-heart"></i> by <a class="" href="http://5p2p.it">5pani2pesci</a>
       </div>
     </div>
   </footer>
@@ -188,6 +219,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="{{site.baseurl}}/js/materialize.js"></script>
   <script src="{{site.baseurl}}/js/init.js"></script>
+  <script src="{{site.baseurl}}/js/smoothscroll.js"></script>
 
   </body>
 </html>

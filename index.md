@@ -41,6 +41,11 @@ message:
     title: QR codes
     text: Su ogni pagina abbiamo inserito un piccolo **codice QR**. Per chi non se ne intendesse, quei piccoli quadratini scarabbochiati che trovate nelle due foto qui sopra, rappresentano un link ad una pagina web. Basta aprire una app dal cellulare e avvicinarsi al codice QR per aprire automaticamente la pagina linkata dal codice ... **magico vero**? Anche mia moglie pensa lo stesso :D<br><br>Vi elenco qui due lettori QR per Android e iPhone, istallate le app e godetevi gli articoli di 5p2p:<br>- QR reader&#58; [[Android]()] o [[iPhone]()]
 
+# 5
+  - icon: #
+    title: Aquistalo ora!
+    text: Fatti **provvidenza per 5pani2pesci**, aquistando uno di questi calendari ci aiuti a portare avanti il "nostro" progetto. Infatti tutto il ricavato sarà utilizzato per 5pani2pesci e la sua missione.
+
 footer:
 
   5pani2pesci è un progetto per conoscere l'Amore vero, quello che ti cambia la vita. Il nostro augurio e la nostra missione è accompagnarti in questo cammino per aiutarti ad approfondire un incontro autentico col Signore e portare pienamente frutto nella tua vita.
@@ -68,11 +73,11 @@ lightbox:
 
 menu: 
       - title: Ordinalo ora
-        url: pagamento
+        url: "#pagamento"
 
 menu-mobile: 
       - title: 5pani2pesci
         url: http://5p2p.it
       - title: Ordinalo ora
-        url: pagamento
+        url: "#pagamento"
 ---
