@@ -8,13 +8,13 @@
   <title>{{page.title}}</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="{{site.baseurl}}/{{page.logo}}">
+  <link rel="shortcut icon" href="{{site.baseurl}}/{{site.logo}}">
 
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <link href="{{site.baseurl}}/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,400italic,700|Roboto+Condensed:300' rel='stylesheet' type='text/css'>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="{{site.baseurl}}/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <!-- awesome icons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- ionicons icons -->
@@ -24,7 +24,7 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><span class="img-helper"></span><img src="{{site.baseurl}}/{{page.logo}}"</a>
+      <a id="logo-container" href="http://5p2p.it" class="brand-logo"><span class="img-helper"></span><img src="{{site.baseurl}}/{{site.logo}}"</a>
       <ul class="right hide-on-med-and-down">
         {% for item in page.menu %}
         <li><a href="{{item.url}}">{{ item.title }}</a></li>
@@ -175,25 +175,28 @@
         <div class="col left-align s9">
           <p>Calendario 2016 <span class="small-text">(20x20cm, da parete)</span></p>
         </div>
-          
         <div class="col left-align s3"><p>15 euro</p></div>
       </div>
-      
+
       <div class="row center">
-      <form id="paypal-donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-      <button class="btn-large waves-effect waves-yellow btn-bright" type="submit" name="action" alt="PayPal">Paga ora
-      </button>
-      </form>
+        <form id="paypal-donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="8Z9TTZNUT9VV8">
+          <button class="btn-large waves-effect waves-yellow btn-bright" type="submit" name="action" alt="PayPal">Paga ora</button>
+        </form>
+      <!-- </div> -->
+
+      <!-- <div class="row"> -->
+        <div class="col s12 center-align">
+          <p class="small-text">Pagamento con carta di credito o paypal, <u>spedizione gratuita</u>.</p>
+        </div>
       </div>
 
     </div>
   </div>
 
   <!-- <footer class="page-footer color-5p2p"> -->
-  <footer class="page-footer blue darken-2">
+  <footer class="page-footer blue darken-2" style="margin-top:-2rem;">
     <div class="container">
       <div class="row">
         <div class="col l8 s12">

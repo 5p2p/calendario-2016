@@ -1,7 +1,6 @@
 ---
 layout: landing
 title: Calendario 2016 - 5pani2pesci
-logo: images/logo-5p2p-128.png
 
 header:
 
@@ -43,8 +42,8 @@ message:
 
 # 5
   - icon: #
-    title: Aquistalo ora!
-    text: Fatti **provvidenza per 5pani2pesci**, aquistando uno di questi calendari ci aiuti a portare avanti il "nostro" progetto. Infatti tutto il ricavato sarà utilizzato per 5pani2pesci e la sua missione.
+    title: Aquista il calendario!
+    text: Fatti **provvidenza per 5pani2pesci**&#58; acquistando uno di questi calendari, ci aiuti a portare avanti il “nostro” progetto. Infatti,  tutto il ricavato sarà utilizzato per 5pani2pesci e la sua missione.
 
 footer:
 
