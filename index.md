@@ -42,7 +42,7 @@ message:
 
 # 5
   - icon: #
-    title: Aquista il calendario!
+    title: Acquista il calendario!
     text: Fatti **provvidenza per 5pani2pesci**&#58; acquistando uno di questi calendari, ci aiuti a portare avanti il “nostro” progetto. Infatti,  tutto il ricavato sarà utilizzato per 5pani2pesci e la sua missione.
 
 footer:
