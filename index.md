@@ -38,7 +38,7 @@ message:
 # 4
   - icon: #
     title: QR codes
-    text: Su ogni pagina abbiamo inserito un piccolo **codice QR**. Per chi non se ne intendesse, quei piccoli quadratini scarabbochiati che trovate nelle due foto qui sopra, rappresentano un link ad una pagina web. Basta aprire una app dal cellulare e avvicinarsi al codice QR per aprire automaticamente la pagina linkata dal codice ... **magico vero**? Anche mia moglie pensa lo stesso :D<br><br>Vi elenco qui due lettori QR per Android e iPhone, istallate le app e godetevi gli articoli di 5p2p:<br>- QR reader&#58; [[Android]()] o [[iPhone]()]
+    text: Su ogni pagina abbiamo inserito un piccolo **codice QR**. Per chi non se ne intendesse, quei piccoli quadratini scarabbochiati che trovate nelle due foto qui sopra, rappresentano un link ad una pagina web. Basta aprire una app dal cellulare e avvicinarsi al codice QR per aprire automaticamente la pagina linkata dal codice ... **magico vero**? Anche mia moglie pensa lo stesso :D<br><br>Vi elenco qui due lettori QR per Android e iPhone, istallate le app e godetevi gli articoli di 5p2p:<br>- QR reader&#58; [[Android](https://play.google.com/store/apps/details?id=me.scan.android.client&hl=en)] o [[iPhone](https://itunes.apple.com/us/app/qr-code-reader-by-scan/id698925807?mt=8)]
 
 # 5
   - icon: #
