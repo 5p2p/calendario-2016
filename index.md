@@ -45,9 +45,6 @@ message:
     title: Acquista il calendario!
     text: Fatti **provvidenza per 5pani2pesci**&#58; acquistando uno di questi calendari, ci aiuti a portare avanti il “nostro” progetto. Infatti,  tutto il ricavato sarà utilizzato per 5pani2pesci e la sua missione.
 
-footer:
-
-  5pani2pesci è un progetto per conoscere l'Amore vero, quello che ti cambia la vita. Il nostro augurio e la nostra missione è accompagnarti in questo cammino per aiutarti ad approfondire un incontro autentico col Signore e portare pienamente frutto nella tua vita.
 
 parallax:
 

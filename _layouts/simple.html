@@ -22,11 +22,83 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="http://5p2p.it" class="brand-logo"><span class="img-helper"></span><img src="{{site.baseurl}}/{{site.logo}}"</a>
+      <a id="logo-container" href="http://5p2p.it" class="brand-logo"><span class="img-helper"></span><img src="{{site.baseurl}}/{{site.logo}}"></a>
       
 
     </div>
   </nav>
 
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col">
+          {{content}}
+        </div>
+      <!-- </div> -->
+    <!-- </div> -->
 
-{{content}}
+    <!-- <div class="row"> -->
+      <form  class="col s12" action="http://5p2p.us3.list-manage.com/subscribe/post" method="POST">
+
+      <p>Ora iscriviti alla <b>Newsletter di 5pani2pesci</b> per ricevere i prossimi aggiornamenti via email:
+      </p>
+        <div class="row center-align">
+          <div class="input-field col s12 m12">
+
+          <input type="hidden" name="u" value="afa7dd5aff58b70795f780470" />
+          <input type="hidden" name="id" value="4f8b1d9b02" />
+          <input id="email" class="formemail validate" type="text" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" value=""/>
+  
+          <!-- <input class="formsubmit" type="submit" name="submit" value="Iscriviti"/> -->
+
+
+            <!-- <input id="email" type="text" class="validate"> -->
+            <label for="email">Indirizzo Email</label>
+            <button class="btn waves-effect waves-blue blue darken-2" type="submit" name="action" alt="Newsletter">Iscriviti ora</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    </div>
+  
+  </div>
+
+
+  <footer>
+  <img class="" width="100%" src="{{site.baseurl}}/{{page.footer-image}}">
+  </footer>
+
+    <footer class="page-footer blue darken-2" style="margin-top:-2rem;">
+    <div class="container">
+      <div class="row">
+        <div class="col l8 s12">
+          <h5 class="white-text">Chi siamo</h5>
+          <div class="grey-text text-lighten-4">{{ site.footer | markdownify }}</div>
+
+        </div>
+        <div class="col l3 offset-l1 s12">
+          <h5 class="white-text">Seguici su:</h5>
+          <ul>
+            <li><a class="white-text" href="{{site.blog}}">Blog</a></li>
+            <li><a class="white-text" href="{{site.social.facebook}}">Facebook</a></li>
+            <li><a class="white-text" href="{{site.social.twitter}}">Twitter</a></li>
+            <li><a class="white-text" href="{{site.social.youtube}}">Youtube</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Crafted with <i class="fa red-text text-lighten-2 fa-heart"></i> by <a class="" href="http://5p2p.it">5pani2pesci</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{{site.baseurl}}/js/materialize.js"></script>
+  <script src="{{site.baseurl}}/js/init.js"></script>
+  <script src="{{site.baseurl}}/js/smoothscroll.js"></script>
+</body>
+</html>
